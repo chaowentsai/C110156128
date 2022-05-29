@@ -1,0 +1,19 @@
+money = int(input())
+ans = 0
+while money != 0:
+    if money >= 100:
+        ans += 1
+        money -= 100
+    elif money < 100 and money >= 50:
+        ans += 1
+        money -= 50
+    elif money < 100 and money < 50 and money >= 10:
+        ans += 1
+        money -= 10
+    elif money < 100 and money < 50 and money < 10 and money >= 5:
+        ans += 1
+        money -= 5
+    elif money < 100 and money < 50 and money < 10 and money < 5 and money >= 1:
+        ans += 1
+        money -= 1
+print(ans)
